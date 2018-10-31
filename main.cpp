@@ -11,13 +11,17 @@
 
 using namespace std;
 void accelerationPulleySystem();
+void vectorDotProduct();
 int main(int argc, const char * argv[]) {
     cout << "Enter a the number of the solver you want?!\n";
     cout << "Find atwood machines acceleration with pulley with mass : 1\n";
+    cout << "Vector dot product: 2\n";
     int choice =0;
     cin >> choice;
     if(choice == 1) {
         accelerationPulleySystem();
+    } else if(choice == 2) {
+        vectorDotProduct();
     }
     return 0;
 }
@@ -56,4 +60,27 @@ void accelerationPulleySystem() {
     cout << "Angular Acceleration: " << angularAcceleration << " rad/s" << endl;
     cout << "Tension on A: " << tension_a << " N" << endl;
     cout << "Tension on B: " << tension_b << " N" << endl;
+}
+
+void vectorDotProduct() {
+    double va_x = 0.0;
+    double va_y = 0.0;
+    double va_z = 0.0;
+    
+    double vb_x = 0.0;
+    double vb_y = 0.0;
+    double vb_z = 0.0;
+    cout << "Enter vector A x y z: ";
+    cin >> va_x;
+    cin >> va_y;
+    cin >> va_z;
+    
+    cout << "Enter vector B x y z: ";
+    cin >> vb_x;
+    cin >> vb_y;
+    cin >> vb_z;
+    
+    double dot_product = va_x*vb_x+va_y*vb_y+va_z*vb_z;
+    cout << "A dot B = " << dot_product << endl;
+    
 }

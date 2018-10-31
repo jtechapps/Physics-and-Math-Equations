@@ -12,7 +12,7 @@
   <li>Vectors
   <ul>
     <li>Cross Product (TODO)</li>
-    <li>Dot Product (TODO)</li>
+    <li>Dot Product</li>
   </ul></li>
   
   <li>Torque and rotational dynamics
